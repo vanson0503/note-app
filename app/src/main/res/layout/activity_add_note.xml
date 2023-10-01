@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:textSize="24dp"
+        android:textColor="#FF5722"
+        android:text="Add Note" />
+
+    <ImageView
+        android:id="@+id/btnAddNote"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:tint="#4CAF50"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/addNoteHeading"
+        android:src="@drawable/baseline_done_24"
+        android:layout_marginEnd="6dp"
+        tools:ignore="UseAppTint" />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="20dp"
+        android:layout_below="@id/addNoteHeading"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:background="@drawable/orange_border_layout"
+        android:hint="Enter title"/>
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edtTitle"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/orange_border_layout"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Enter description"
+        android:inputType="text|textMultiLine"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="18dp" />
+</RelativeLayout>
